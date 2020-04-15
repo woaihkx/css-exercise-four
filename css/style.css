@@ -1,4 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+div {
+  position: relative;
+  margin-bottom: 15px;
+  float: left;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1.title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+h1.city {
+  font-size: 2.3em;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 575px) {
+  div {
+    width: 50%;
+    float: right;
+  }
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+  h1.title {
+   font-size: 1em;
+  }
+  h1.city {
+   font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  div {
+    width: 20%;
+    float: left;
+  }
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+  h1.title {
+   font-size: 1em;
+  }
+  h1.city {
+   font-size: 2em;
+  }
 }
